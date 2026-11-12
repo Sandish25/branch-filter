@@ -20,5 +20,6 @@ jobs:
         uses: actions/checkout@v4
 
       - name: simple CI command
-        run: echo '"Branch name is : ${{ github.ref }}"'
+        run: |
+          echo "Branch name is : ${{ github.ref }}"
 
